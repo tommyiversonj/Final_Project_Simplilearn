@@ -1,4 +1,4 @@
-package BasicProgram3;
+package Methods;
 
 public class CallMethod {
 	
