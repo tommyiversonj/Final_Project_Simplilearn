@@ -10,7 +10,7 @@ public class HashTables {
 	ht.put(10, "Ales");
 	ht.put(12, "Weah");
 	ht.put(4, "Alex");
-	ht.put(10, "Blessing");
+	ht.put(106, "Blessing");
 	
 	System.out.println("\nThe Elements of HashTable are");
 	for(Map.Entry n:ht.entrySet()) {
