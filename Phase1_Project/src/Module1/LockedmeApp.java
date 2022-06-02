@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
+
 public class LockedmeApp {
 	
 	public static void dirCreate() {
@@ -33,13 +34,11 @@ public class LockedmeApp {
 
 	public static void mainMenu() throws IOException {
 
-		System.out.println("==========================================");
-		System.out.println("*					*");
+		System.out.println("=========================================");
 		System.out.println("*         WELCOME TO MAIN MENU	        *");
-		System.out.println("*					*");
-		System.out.println("==========================================");
+		System.out.println("=========================================");
 
-		System.out.println("Select an option\n 1.Sign up\n 2.Sign in\n 3.Exit");
+		System.out.println("Select an option\n 1.Sign up\n 2.Sign in\n 3.Sign out");
 	try {
 		Scanner sc = new Scanner(System.in);
 		int Option = sc.nextInt();
@@ -100,7 +99,7 @@ public class LockedmeApp {
 		boolean found = false;
 		while(readDbFile.hasNext() && !found) {
 			if(readDbFile.next().equals(inname)) {
-				System.out.println("Enter Pasword : ");
+				System.out.println("Enter Password : ");
 				String inpassword = input.next();
 				if(readDbFile.next().equals(inpassword)) {
 					System.out.println("User Logged in Successfully!\n");
@@ -127,8 +126,8 @@ public class LockedmeApp {
 
 
 	public static void showMenu() throws IOException {
-		System.out.println("*******Entered Locker*******");
-		System.out.println("1.List Files in Directory\n2.Add,Delete or Search File in Directory\n3.Exit");
+		System.out.println("*******Business-level Operations*******");
+		System.out.println("1.List Files in Directory in ascending order\n2.Add,Delete or Search File in Directory\n3.Exit");
 		try {
 		Scanner sc = new Scanner(System.in);
 		int option1 = sc.nextInt();
@@ -256,10 +255,8 @@ public class LockedmeApp {
 	} 
 
 	public static void welcomeMessage() {
-		System.out.println("*-------------");
-		System.out.println("||----------------------------------------------------------||");
-		System.out.println("||------------------  LockedMe.com mm-----------------------||");
-		System.out.println("||**** Appplication Developed by: Tommy Iverson Johnson ****||");
+		System.out.println("||-----------------------LockedMe.com-----------------------||");
+		System.out.println("||****Appplication Developed by: Tommy Iverson Johnson***||\n");
 	    }
 
 	public static void tools() throws IOException{
